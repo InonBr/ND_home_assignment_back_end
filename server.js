@@ -6,7 +6,7 @@ const connectDB = require('./db/db');
 const userRouters = require('./routers/users');
 const randomData = require('./routers/randomData');
 
-const port = 5000;
+const port = process.env.PORT || 5000;
 
 app.use(cors());
 app.use(express.json());
